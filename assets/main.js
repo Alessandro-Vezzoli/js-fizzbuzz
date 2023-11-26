@@ -15,17 +15,17 @@ for (let i = 100; i >= 1; i--) {
     // PER I NUMERI CHE SONO SIA MULTIPLI DI 3 CHE PULTIPLI DI 5 STAMPARE fizzbuzz
     console.log("fizzbuzz");
     list = "fizzBuzz";
-    colorClass = "bg-danger"; // Rosso per Fizz
+    colorClass = "bg-danger";
   } else if (i % 3 === 0) {
     // PER I MULTIPLI DI 3 SCRIVERE fizz
     console.log("fizz");
     list = "fizz";
-    colorClass = "bg-success"; // Verde per FizzBuzz
+    colorClass = "bg-success";
   } else if (i % 5 === 0) {
     // PER I MULTIPLI DI 5 STAMPARE buzz
     console.log("buzz");
     list = "buzz";
-    colorClass = "bg-warning"; // Giallo per Buzz
+    colorClass = "bg-warning";
   } else {
     list = i;
     colorClass = "";
