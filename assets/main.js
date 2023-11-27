@@ -10,26 +10,22 @@ for (let i = 100; i >= 1; i--) {
   //in console
 
   let list = i;
+  let colorClass = "";
 
   if (i % 3 === 0 && i % 5 === 0) {
     // PER I NUMERI CHE SONO SIA MULTIPLI DI 3 CHE PULTIPLI DI 5 STAMPARE fizzbuzz
-    console.log("fizzbuzz");
-    list = "fizzBuzz";
+    list = "FizzBuzz";
     colorClass = "bg-danger";
   } else if (i % 3 === 0) {
     // PER I MULTIPLI DI 3 SCRIVERE fizz
-    console.log("fizz");
-    list = "fizz";
+    list = "Fizz";
     colorClass = "bg-success";
   } else if (i % 5 === 0) {
     // PER I MULTIPLI DI 5 STAMPARE buzz
-    console.log("buzz");
-    list = "buzz";
+    list = "Buzz";
     colorClass = "bg-warning";
-  } else {
-    list = i;
-    colorClass = "";
   }
+  console.log(list);
   elementList.insertAdjacentHTML(
     "afterbegin",
     ` <li class="list-group-item list-group-horizontal m-1 col-2 ${colorClass}"> ${list}</li> `
